@@ -1,0 +1,21 @@
+list_of_ignores =[
+    'user_import',
+    ]
+
+hosts_to_check = {
+                'localhost':{
+                              'drush_bin':'/usr/local/bin/drush',
+                              'user':'mrrobot',
+                              'key':'/home/mrrobot/.ssh/id_rsa',
+                              'sites' : 
+                                  {
+                                   'default' : {
+                                                 'root' : '/srv/www/', 
+                                                 'site_uri':'http://default',
+                                                 'ignores' : [
+                                                              'date',
+                                                              ]
+                                                },
+                                   }
+                },
+            }
